@@ -24,28 +24,30 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
+const assetPath = (file) => `${import.meta.env.BASE_URL}assets/${file}`;
+
 const assets = {
-  verfoitech: "/assets/velofitech-logo.svg",
-  logo: "/assets/datacorp-logo.png",
-  hero: "/assets/traffic-data-analytics.png",
-  analyticsIntro: "/assets/traffic-data-analytics-intro.jpg",
-  engineering: "/assets/service-engineering.jpg",
-  roadSafety: "/assets/road-safety.jpg",
-  collection: "/assets/data-collection.jpg",
-  analytics: "/assets/data-analytics.jpg",
-  ladysmith: "/assets/ladysmith.jpg",
-  annualCounts: "/assets/annual-counts.jpg",
-  enforcement: "/assets/enforcement.jpg",
-  smarterCities: "/assets/smarter-cities.jpg",
-  qualitySurveys: "/assets/quality-surveys.jpg",
-  goldenYears: "/assets/golden-years.png",
-  expo: "/assets/expo-2024.jpg",
-  careerPartner: "/assets/career-partner.png",
-  partnerImage: "/assets/annual-counts.jpg",
-  iso9001: "/assets/iso-9001.png",
-  iso27001: "/assets/iso-27001.png",
-  gdpr: "/assets/gdpr.png",
-  cmmi: "/assets/cmmi.png",
+  verfoitech: assetPath("velofitech-logo.svg"),
+  logo: assetPath("datacorp-logo.png"),
+  hero: assetPath("traffic-data-analytics.png"),
+  analyticsIntro: assetPath("traffic-data-analytics-intro.jpg"),
+  engineering: assetPath("service-engineering.jpg"),
+  roadSafety: assetPath("road-safety.jpg"),
+  collection: assetPath("data-collection.jpg"),
+  analytics: assetPath("data-analytics.jpg"),
+  ladysmith: assetPath("ladysmith.jpg"),
+  annualCounts: assetPath("annual-counts.jpg"),
+  enforcement: assetPath("enforcement.jpg"),
+  smarterCities: assetPath("smarter-cities.jpg"),
+  qualitySurveys: assetPath("quality-surveys.jpg"),
+  goldenYears: assetPath("golden-years.png"),
+  expo: assetPath("expo-2024.jpg"),
+  careerPartner: assetPath("career-partner.png"),
+  partnerImage: assetPath("annual-counts.jpg"),
+  iso9001: assetPath("iso-9001.png"),
+  iso27001: assetPath("iso-27001.png"),
+  gdpr: assetPath("gdpr.png"),
+  cmmi: assetPath("cmmi.png"),
 };
 
 const navItems = [
