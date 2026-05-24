@@ -30,6 +30,7 @@ const assets = {
   verfoitech: assetPath("velofitech-logo.svg"),
   logo: assetPath("datacorp-logo.png"),
   hero: assetPath("traffic-data-analytics.png"),
+  serviceVideo: assetPath("traffic-data-analytics.mp4"),
   analyticsIntro: assetPath("traffic-data-analytics-intro.jpg"),
   engineering: assetPath("service-engineering.jpg"),
   roadSafety: assetPath("road-safety.jpg"),
@@ -435,12 +436,8 @@ function App() {
             <p className="eyebrow">Selected service</p>
             <h3>{activeOffering.title}</h3>
             <p>{activeOffering.summary}</p>
-            <div className="offering-list">
-              {activeOffering.provides.map((item) => (
-                <span key={item}>
-                  <CheckCircle2 size={18} /> {item}
-                </span>
-              ))}
+            <div className="offering-video">
+              <video src={assets.serviceVideo} controls muted playsInline poster={activeOffering.image} />
             </div>
             <a className="primary-action" href="#contact">
               Enquire about {activeOffering.title} <ArrowRight size={18} />

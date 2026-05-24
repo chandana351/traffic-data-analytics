@@ -925,6 +925,21 @@ h3 {
   color: var(--green);
 }
 
+.offering-video {
+  overflow: hidden;
+  margin: 24px 0;
+  border-radius: 8px;
+  background: #071424;
+  box-shadow: 0 16px 38px rgba(22, 38, 61, 0.16);
+}
+
+.offering-video video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
 .stories {
   background: #eef6f4;
 }
