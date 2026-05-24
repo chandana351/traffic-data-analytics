@@ -54,6 +54,7 @@ const assets = {
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
+  { label: "Products", href: "#products" },
   { label: "Company", href: "#company" },
   { label: "Careers", href: "#careers" },
   { label: "Partner", href: "#partner" },
@@ -94,6 +95,29 @@ const analytics = [
   "NMU and pedestrian desire-line tracking",
   "Origin-destination and journey time",
   "Parking, occupancy, ATC and GIS reports",
+];
+
+const products = [
+  {
+    title: "TrafficLenz Analytics",
+    image: assets.analyticsIntro,
+    text: "A dashboard-style traffic intelligence platform for validated counts, movement summaries, and visual reporting.",
+  },
+  {
+    title: "AI Enforcement Camera",
+    image: assets.careerPartner,
+    text: "Camera-based road safety solution for speed monitoring, violation review, and enforcement evidence workflows.",
+  },
+  {
+    title: "Survey Data Portal",
+    image: assets.collection,
+    text: "Centralized access for survey video, field datasets, count outputs, quality checks, and downloadable reports.",
+  },
+  {
+    title: "Smart Reporting Suite",
+    image: assets.smarterCities,
+    text: "Client-ready reporting tools for dashboards, maps, trend charts, executive summaries, and planning decisions.",
+  },
 ];
 
 const stats = [
@@ -405,6 +429,30 @@ function App() {
               </span>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section products" id="products">
+        <div className="section-title-row">
+          <div>
+            <p className="eyebrow">Products</p>
+            <h2>Tools for traffic intelligence, safety, and reporting.</h2>
+          </div>
+          <a href="#contact">Request product details <ArrowRight size={18} /></a>
+        </div>
+        <div className="product-grid">
+          {products.map((product) => (
+            <article className="product-card" key={product.title}>
+              <img src={product.image} alt={product.title} />
+              <div>
+                <h3>{product.title}</h3>
+                <p>{product.text}</p>
+                <a href="#contact">
+                  Enquire now <ChevronRight size={16} />
+                </a>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 

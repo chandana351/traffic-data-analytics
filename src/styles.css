@@ -535,6 +535,48 @@ h3 {
   gap: 16px;
 }
 
+.products {
+  background: #fff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 34px rgba(22, 38, 61, 0.06);
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card div {
+  padding: 22px;
+}
+
+.product-card p {
+  color: var(--muted);
+  line-height: 1.62;
+}
+
+.product-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--teal);
+  font-weight: 800;
+}
+
 .careers {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1195,7 +1237,8 @@ footer span {
   .stats-band,
   .company-grid,
   .image-card-grid,
-  .updates-grid {
+  .updates-grid,
+  .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1346,7 +1389,8 @@ footer span {
   }
 
   .image-card-grid,
-  .updates-grid {
+  .updates-grid,
+  .product-grid {
     grid-template-columns: 1fr;
   }
 }
