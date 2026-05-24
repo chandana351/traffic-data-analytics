@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-labelledby="title desc">
+  <title id="title">Verfoitech</title>
+  <desc id="desc">Verfoitech logo</desc>
+  <rect width="420" height="120" rx="18" fill="#ffffff"/>
+  <path d="M46 31h58L75 89 46 31Z" fill="#0b7f86"/>
+  <path d="M65 31h64L97 89 65 31Z" fill="#8fc640" opacity="0.95"/>
+  <path d="M83 31h47L106 75 83 31Z" fill="#132035"/>
+  <text x="148" y="58" fill="#132035" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" letter-spacing="0">VERFOITECH</text>
+  <text x="150" y="83" fill="#607083" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.8">DIGITAL SOLUTIONS</text>
+</svg>
