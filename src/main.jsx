@@ -310,6 +310,20 @@ function App() {
         </div>
       </section>
 
+      <section className="section enforcement-banner" id="road-safety-solutions">
+        <div className="enforcement-copy">
+          <h2>Transforming Roads for a Safer, Smarter Future.</h2>
+          <p>
+            Our AI-powered traffic enforcement solutions stand at the forefront of
+            a safer, smarter, and more sustainable future for transportation.
+          </p>
+          <a href="#contact">
+            Contact Us <ArrowRight size={20} />
+          </a>
+        </div>
+        <img src={assets.careerPartner} alt="AI powered traffic enforcement cameras and speed display" />
+      </section>
+
       <section className="section stats-band" aria-label="Company statistics">
         {stats.map(([number, label]) => (
           <div className="stat" key={label}>
