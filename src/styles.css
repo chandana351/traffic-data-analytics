@@ -529,10 +529,32 @@ h3 {
   gap: 42px;
 }
 
+.company-copy img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 28px;
+  border-radius: 8px;
+  box-shadow: 0 16px 44px rgba(22, 38, 61, 0.1);
+}
+
 .company-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.company-grid article {
+  overflow: hidden;
+}
+
+.company-grid article > img {
+  width: calc(100% + 48px);
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  margin: -24px -24px 22px;
 }
 
 .products {

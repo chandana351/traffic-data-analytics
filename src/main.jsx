@@ -525,6 +525,7 @@ function App() {
 
       <section className="section company" id="company">
         <div className="company-copy">
+          <img src={assets.ladysmith} alt="Traffic operations and infrastructure delivery" />
           <p className="eyebrow">Company</p>
           <h2>Built for transport data that has to stand up in the real world.</h2>
           <p>
@@ -535,16 +536,19 @@ function App() {
         </div>
         <div className="company-grid">
           <article>
+            <img src={assets.annualCounts} alt="Infrastructure partners traffic project" />
             <Building2 size={24} />
             <h3>Infrastructure partners</h3>
             <p>Supporting consultants, public agencies, developers, and operators.</p>
           </article>
           <article>
+            <img src={assets.analyticsIntro} alt="TrafficLenz analytics dashboard workflow" />
             <TrafficCone size={24} />
             <h3>TrafficLenz workflows</h3>
             <p>Centralized access to multi-source traffic data and visual dashboards.</p>
           </article>
           <article>
+            <img src={assets.collection} alt="Human quality control traffic survey" />
             <UsersRound size={24} />
             <h3>Human quality control</h3>
             <p>Experienced analysts validate outputs before they reach decision makers.</p>
